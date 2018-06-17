@@ -1,0 +1,701 @@
+                                                                   Revision : 01
+--------------------------------------------------------------------------------
+Software name      BIOS Update CD
+                   (ISO image file for bootable CD)
+
+Support models     ThinkPad X220, X220i, X220 Tablet, X220i Tablet
+
+Operating Systems  Microsoft Windows 8  32-bit, 64-bit
+                   Microsoft Windows 7  32-bit, 64-bit
+                   Microsoft Windows Vista  32bit, 64bit
+                   Microsoft Windows XP  Professional SP3
+
+                   Refer to marketing materials to find out what computer models
+                   support which Operating Systems.
+
+Version            1.45
+
+
+--------------------------------------------------------------------------------
+WHAT THIS PACKAGE DOES
+
+  This package provides the ISO image file of UEFI BIOS which is compatible with
+  CD/DVD/BD writing software to create the CD/DVD/BD for the UEFI BIOS update.
+  Hereafter the CD/DVD/BD for the UEFI BIOS update is called as "BIOS Update CD".
+
+  The BIOS Update CD can boot the computer disregarding the operating systems
+  and update the UEFI BIOS (including system program and Embedded Controller
+  program) stored in the ThinkPad computer to fix problems, add new functions,
+  or expand functions as noted below.
+
+  For that purpose, it is necessary to have the CD/DVD/BD writing software (with
+  CD/DVD/BD creation function from the ISO image file) prepared separately.
+
+  Also, any one of the following types of CD-RW, CD-RW & DVD Combo, DVD, DVD
+  Multi, BD or other optical drives should be prepared. (Hereafter these drives
+  are called as "optical drive".)
+  - Ultrabay Slim installed in the ThinkPad UltraBase
+  - USB
+
+  This program is language independent and can be used with any language system.
+
+
+--------------------------------------------------------------------------------
+CHANGES IN THIS RELEASE
+  Version 1.45
+
+[Important updates]
+- Security fix addresses LEN-19568 Intel Active Management Technology MEBx Access 
+  Control Bypass.
+
+[New functions or enhancements]
+  Nothing.
+
+[Problem fixes]
+  Nothing.
+
+
+--------------------------------------------------------------------------------
+KNOWN LIMITATIONS
+
+- After backing up a Windows XP system to a hard drive connected to the e-SATA
+  port through Rescue and Recovery, when attempting to restore the backup image
+  from the e-SATA hard drive through Rescue and Recovery, a blue screen error
+  occurs. Rescue and Recovery can not access the e-SATA hard drive.
+
+
+--------------------------------------------------------------------------------
+DETERMINING WHICH VERSION IS INSTALLED
+
+  There are two ways to check the UEFI BIOS version and BIOS ID.
+
+
+ [Checking on Windows]
+
+  Windows 8:
+
+  1. Hold down the Windows logo key and press X to open a menu at the lower-left
+     area of the screen.
+  2. Select Control Panel from the menu.
+  3. Make sure "View by Category" is selected, and select System and Security,
+     select Administrative Tools, and then select System Information.
+     - or -
+  2. Select Run from the menu.
+  3. Type msinfo32, and press Enter.
+  4. On the System Information window, make sure System Summary is selected in
+     the left side of the window.
+  5. Locate the BIOS version/date line in the right side of the window.
+     "LENOVO BIOS ID (BIOS version), date" will be shown.
+
+  If you are prompted for an administrator password or confirmation, type your
+  password, or click Continue.
+
+
+  Windows 7/Vista:
+
+  1. Click Start, click All Programs or Programs, click Accessories, click
+     System Tools and then click System Information.
+     - or -
+     Click Start, type msinfo32 in the Start Search box and then click msinfo32
+     in the Programs list.
+  2. On the System Information window, make sure System Summary is selected in
+     the left side of the window.
+  3. Locate the BIOS version/date line in the right side of the window.
+     "LENOVO BIOS ID (BIOS version), date" will be shown.
+
+  If you are prompted for an administrator password or confirmation, type your
+  password, or click Continue.
+
+  Windows XP:
+
+  1. Click Start, click All programs, click Accessories, click System Tools and
+     then click System Information.
+     - or -
+     Click Start, click Run, type msinfo32 in the Open box and then click OK.
+  2. On the System Information window, make sure System Summary is selected in
+     the left side of the window.
+  3. Locate the BIOS version/date line in the right side of the window.
+     "LENOVO BIOS ID (BIOS version), date" will be shown.
+
+
+ [Checking on ThinkPad Setup]
+
+ Windows 8:
+  1. Turn on the computer to start Windows.
+  2. Hold down the Windows logo key and press C to open the Charm bar on the
+     screen.
+  3. Select Settings, then Power from the menu.
+  4. Select Reboot to restart the computer.
+  5. While the "To interrupt normal startup, press the blue ThinkVantage button"
+     message is displayed
+     at the lower-left area or lower-center of the screen, press the F1 key.
+     The ThinkPad Setup menu will be displayed. If a password prompt appears,
+     type the correct password.
+  6. Locate the UEFI BIOS Version line and Embedded Controller Version line.
+     "UEFI BIOS version (BIOS ID)" will be shown on the UEFI BIOS Version line.
+  7. Turn off the computer.
+
+ Windows 7 and Windows XP:
+  1. Turn off the computer.
+  2. Turn on the computer.
+  3. While the "To interrupt normal startup, press the blue ThinkVantage button"
+     message is displayed at the lower-left area of the screen, press the F1 key.
+     The ThinkPad Setup menu will be displayed. If a password prompt appears,
+     type the correct password.
+  4. Locate the UEFI BIOS Version line and Embedded Controller Version line.
+     "UEFI BIOS version (BIOS ID)" will be shown on the UEFI BIOS Version line.
+  5. Turn off the computer.
+
+
+--------------------------------------------------------------------------------
+NOTES
+
+- You should install the CD/DVD/BD writing software which supports CD/DVD/BD
+  creation function from the ISO image file to create the BIOS Update CD.
+
+- To boot the computer from the BIOS Update CD, you should have any one of the
+  following types of optical drives.
+  - Ultrabay Slim installed in the ThinkPad UltraBase
+  - USB
+  Any types of other optical device like ExpressCard device are not supported.
+
+- To boot the computer from the BIOS Update CD, you may need to change the boot
+  device setting in your ThinkPad computer. Refer to the "Prepare boot device"
+  section in this document.
+
+- The contents of the BIOS Update CD can not be shown by Windows Explorer.
+
+
+--------------------------------------------------------------------------------
+CREATING THE BIOS UPDATE CD
+
+  This section assumes to use Internet Explorer and Windows Explorer.
+
+  Downloading file
+  1. Click once on the underlined file name. Once this is done, some pop-up
+     windows will appear.
+  2. Follow the instructions on the screen.
+  3. In the window to choose Run or Save, click Save.
+  4. Choose the folder you would like to download the file to and click Save.
+     A different window will appear and the download will begin and complete.
+     Once the download has completed, there may or may not be a message stating
+     that the download completed successfully.
+
+  Creating BIOS Update CD
+  5. Prepare a computer with an optical drive installed and a blank CD/DVD/BD
+     disc, and make sure the CD/DVD/BD writing software is installed into the
+     computer.
+  6. Locate the folder where the file was downloaded.
+  7. Locate the file ending in ".ISO" that was downloaded, then double-click it.
+     A writing software will open.
+  8. Follow the instructions on the screen to finish writing and complete
+     creating BIOS Update CD.
+
+  Finally delete the file saved in the step 4.
+
+
+--------------------------------------------------------------------------------
+PREPARING THE BOOT DEVICE
+
+  Confirm that the BIOS CD is set up as bootable and an optical drive is in the
+  boot device list of your ThinkPad Setup.
+
+  Windows 8:
+  1. Turn on the computer to start Windows.
+  2. Hold down the Windows logo key and press C to open the Charm bar on the
+     screen.
+  3. Select Settings, then Power from the menu.
+  4. Select Reboot to restart the computer.
+
+  Windows 7 and Windows XP:
+  1. Power off the computer.
+  2. Power on the computer.
+
+  5. While the "To interrupt normal startup, press the blue ThinkVantage button"
+     message is displayed at the lower-left area of the screen, press the F1 key.
+     The ThinkPad Setup menu will be displayed. If a password prompt appears,
+     type the correct password.
+  6. Choose "Startup" from the menu.
+  7. In "UEFI/Legacy Boot", make sure "Both" or "Legacy Only" is chosen.
+  8. Choose "Boot" from the menu. Note the current boot priority order for
+     restoration later if you need to modify your boot list.
+  9. In "Boot Priority Order", make sure the following device is on top of
+     "ATA HDD0".
+     - "ATAPI CD0" (when using an Ultrabay Slim optical drive installed in the
+                    ThinkPad UltraBase)
+     - "USB CD"    (when using a USB optical drive)
+  10. Press the ESC key several times to enter Restart menu and choose
+     "Exit Discarding Changes" to exit from ThinkPad Setup, or press the F10 key
+     to save the new setup and then select Yes.
+  11. Restart the computer.
+
+
+--------------------------------------------------------------------------------
+UPDATING THE UEFI BIOS
+
+Notes:
+- If your computer runs satisfactorily now, it may not be necessary to update
+  the UEFI BIOS. To determine if you should update the UEFI BIOS, refer to the
+  Version Information section.
+- You need an AC adapter, a charged battery pack and any one of the following
+  types of optical drives.
+  - Ultrabay Slim installed in the ThinkPad UltraBase
+  - USB
+- Remove the Power-on password prior to updating the UEFI BIOS in the remote
+  deployment environments.
+
+
+Attention:
+  Do not turn off, suspend the computer or remove the BIOS UPDATE CD until
+  the update has been completed. IF YOU DO THAT WHILE THE UPDATE IS STILL
+  IN PROGRESS, THE SYSTEM BOARD MAY HAVE TO BE REPLACED.
+
+  Windows 8:
+  1. Firmly connect the AC adapter to the target computer.
+  2. Make sure your ThinkPad computer has an optical drive installed.
+  3. Insert the BIOS Update CD into the optical drive and turn on the computer.
+  4. Turn on the computer to start Windows.
+  5. Hold down the Windows logo key and press C to open the Charm bar on the
+     screen.
+  6. Select Settings, then Power from the menu.
+  7. Select Reboot to restart the computer.
+  8. While the "To interrupt normal startup, press the blue ThinkVantage button"
+     message is displayed at the lower-left area or lower-center area of the
+     screen, press the F12 key. The Boot menu will be displayed. If a password
+     prompt appears,type the correct password.
+  9. Select "ATAPI CD0" or "USB CD" to boot BIOS Update CD.
+ 10. Select Read this first from the menu and carefully read the information.
+ 11. Press the Esc key to return to the menu.
+ 12. Select Update system program and follow the instructions on the screen.
+ 13. After the information panel appears, remove the BIOS Update CD from the
+     optical drive then press the Enter key to restart the computer.
+
+  Windows 7 and Windows XP:
+
+  1. Firmly connect the AC adapter to the target computer.
+  2. Make sure your ThinkPad computer has an optical drive installed.
+  3. Insert the BIOS Update CD into the optical drive and turn on the computer.
+  4. Select Read this first from the menu and carefully read the information.
+  5. Press the Esc key to return to the menu.
+  6. Select Update system program and follow the instructions on the screen.
+  7. After the information panel appears, remove the BIOS Update CD from the
+     optical drive then press the Enter key to restart the computer.
+
+
+--------------------------------------------------------------------------------
+INITIALIZING UEFI BIOS
+
+  UEFI BIOS Initialization is suggested for some problems. To initialize the
+  UEFI BIOS settings:
+
+  Windows 8:
+  1. Turn on the computer to start Windows.
+  2. Hold down the Windows logo key and press C to open the Charm bar on the
+     screen.
+  3. Select Settings, then Power from the menu.
+  4. Select Reboot to restart the computer.
+
+  Windows 7 and Windows XP:
+  1. Turn off the computer.
+  2. Turn on the computer.
+
+  5. While the "To interrupt normal startup, press the blue ThinkVantage button"
+     message is displayed at the lower-left area of the screen, press the F1 key.
+     The ThinkPad Setup menu will be displayed. If a password prompt appears,
+     type the correct password.
+  6. Press the F9 key to load default configuration.
+  7. Select Yes.
+  8. Press the F10 key to save default configuration and exit.
+  9. Select Yes.
+  10. Restart the computer.
+
+  Note:
+  After initialization you may need to reapply some settings that you had
+  changed previously.
+
+
+--------------------------------------------------------------------------------
+VERSION INFORMATION
+
+  The following versions of UEFI BIOS and ECP (Embedded Controller Program) have
+  been released to date.
+
+  Package  (ID)        UEFI BIOS  (BIOS ID)   ECP  (ECP ID)    Rev.  Issue Date
+  -------------------  ---------------------  ---------------- ----  -----------
+  1.45     (8DUJ30UC)  1.45       (8DET75WW)  1.24  (8DHT34WW) 01    2018/05/07
+                                              1.24  (8ZHT34WW)
+  1.44     (8DUJ29UC)  1.44       (8DET74WW)  1.24  (8DHT34WW) 01    2018/03/15
+                                              1.24  (8ZHT34WW)
+  1.43     (8DUJ28UC)  1.43       (8DET73WW)  1.24  (8DHT34WW) 01    2016/10/25
+                                              1.24  (8ZHT34WW)
+  1.42     (8DUJ27UC)  1.42       (8DET72WW)  1.24  (8DHT34WW) 01    2016/03/02
+                                              1.24  (8ZHT34WW)
+  1.40     (8DUJ26UC)  1.40       (8DET70WW)  1.24  (8DHT34WW) 01    2015/05/26
+                                              1.24  (8ZHT34WW)
+  1.39     (8DUJ25UC)  1.39       (8DET69WW)  1.24  (8DHT34WW) 01    2013/07/29
+                                              1.24  (8ZHT34WW)
+  1.38     (8DUJ24UC)  1.38       (8DET68WW)  1.24  (8DHT34WW) 01    2013/05/08
+                                              1.24  (8ZHT34WW)
+  1.37-1.24(8DUJ23UC)  1.37       (8DET67WW)  1.24  (8DHT34WW) 01    2013/02/06
+                                              1.24  (8ZHT34WW)
+  1.37     (8DUJ22UC)  1.37       (8DET67WW)  1.23  (8DHT33WW) 01    2013/01/08
+                                              1.23  (8ZHT33WW)
+  1.36     (8DUJ21UC)  1.36       (8DET66WW)  1.22  (8DHT32WW) 01    2012/11/02
+                                              1.22  (8ZHT32WW)
+  1.35     (8DUJ20UC)  1.35       (8DET65WW)  1.22  (8DHT32WW) 01    2012/10/18
+                                              1.22  (8ZHT32WW)
+  1.34     (8DUJ19UC)  1.34       (8DET64WW)  1.22  (8DHT32WW) 01    2012/09/11
+                                              1.22  (8ZHT32WW)
+  1.33     (8DUJ18UC)  1.33       (8DET63WW)  1.21  (8DHT31WW) 01    2012/07/26
+                                              1.21  (8ZHT31WW)
+  1.31     (8DUJ17UC)  1.31       (8DET61WW)  1.20  (8DHT30WW) 01    2012/06/13
+                                              1.20  (8ZHT30WW)
+  1.29     (8DUJ16UC)  1.29       (8DET59WW)  1.20  (8DHT30WW) 01    2012/04/25
+                                              1.20  (8ZHT30WW)
+  1.28     (8DUJ15UC)  1.28       (8DET58WW)  1.13  (8DHT29WW) 01    2012/02/27
+                                              1.13  (8ZHT29WW)
+  1.26     (8DUJ14UC)  1.26       (8DET56WW)  1.13  (8DHT29WW) 01    2011/12/26
+                                              1.13  (8ZHT29WW)
+  1.25     (8DUJ13UC)  1.25       (8DET55WW)  1.13  (8DHT29WW) 01    2011/11/22
+                                              1.13  (8ZHT29WW)
+  1.24     (8DUJ12UC)  1.24       (8DET54WW)  1.13  (8DHT29WW) 02    2011/11/10
+                                              1.13  (8ZHT29WW)
+  1.24     (8DUJ12UC)  1.24       (8DET54WW)  1.13  (8DHT29WW) 01    2011/10/28
+                                              1.13  (8ZHT29WW)
+  1.22                 1.22       (8DET52WW)  1.12  (8DHT28WW) 01    2011/10/07
+                                              1.12  (8ZHT28WW)
+  1.21                 1.21       (8DET51WW)  1.11  (8DHT27WW) 02    2011/09/13
+                                              1.11  (8ZHT27WW)
+  1.21                 1.21       (8DET51WW)  1.11  (8DHT27WW) 01    2011/09/07
+                                              1.11  (8ZHT27WW)
+  1.19                 1.19       (8DET49WW)  1.09  (8DHT25WW) 01    2011/07/19
+                                              1.09  (8ZHT25WW)
+  1.18                 1.18       (8DET48WW)  1.08  (8DHT24WW) 01    2011/07/19
+                                              1.08  (8ZHT24WW)
+  1.17                 1.17       (8DET47WW)  1.08  (8DHT24WW) 01    2011/06/10
+                                              1.08  (8ZHT24WW)
+  1.16                 1.16       (8DET46WW)  1.07  (8DHT23WW) 01    2011/05/27
+                                              1.07  (8ZHT23WW)
+  1.15                 1.15       (8DET45WW)  1.06  (8DHT22WW) 01    2011/05/19
+  1.12                 1.12       (8DET42WW)  1.05  (8DHT21WW) 01    2011/05/12
+  1.11                 1.11       (8DET41WW)  1.03  (8DHT19WW) 01    2011/04/08
+  1.06                 1.06       (8DET34WW)  1.03  (8DHT19WW) 01    Manufacturing only
+  1.04                 1.04       (8DET32WW)  1.03  (8DHT19WW) 01    Manufacturing only
+
+  Note: Revision number (Rev.) is for administrative purpose of this README
+        document and is not related to software version. There is no need to
+        upgrade this software when the revision number changes.
+
+  To check the version of UEFI BIOS and Embedded Controller Program, refer to
+  the Determining which version is installed section.
+
+
+Summary of Changes
+
+  Where: <   >        Package version
+         UEFI:        UEFI BIOS version
+         ECP:         Embedded Controller Program version
+         [Important]  Important update
+         (New)        New function or enhancement
+         (Fix)        Correction to existing function
+
+<1.45>
+ UEFI: 1.45 / ECP: 1.24
+- [Important] Security fix addresses LEN-19568 Intel Active Management 
+              Technology MEBx Access Control Bypass.
+
+<1.44-1.24>
+ UEFI: 1.44 / ECP: 1.24
+- [Important] Enhancement to address CVE-2017-5715.
+
+<1.43-1.24>
+ UEFI: 1.43 / ECP: 1.24
+- [Important] Security fix addresses LEN-8324 System Management Mode (SMM) BIOS Vulnerability.
+  (Note)
+  If the UEFI BIOS has been updated to version 1.43 or higher, it is no longer
+  able to roll back to the version before 1.43 for security improvement.
+- (Fix) Fixed an issue where the brightness control might not work on Windows XP.
+
+<1.42-1.24>
+ UEFI: 1.42 / ECP: 1.24
+- [Important] Security fix addresses LEN-2015-002 SMM "Incursion" Attack and
+              some security fixes.
+              (Note)
+              If the UEFI BIOS has been updated to version 1.42 or higher,
+              it is no longer able to roll back to the version before 1.42
+              for security improvement.
+- (Fix) Fixed an issue where the computer might not enter Startup interrupt menu.
+
+<1.40-1.24>
+ UEFI: 1.40 / ECP: 1.24
+- [Important]
+        Mitigate risk of security vulnerability related to DRAM Row Hammering.
+
+<1.39-1.24>
+ UEFI: 1.39 / ECP: 1.24
+- (New) Updated the CPU microcode.
+- (Fix) Corrected the help message for enabling the microphone in the BIOS Setup.
+
+<1.38-1.24>
+ UEFI: 1.38 / ECP: 1.24
+- (Fix) Fixed an issue where no sound was heard from the ThinkPad internal
+        speakers while the computer was locked when SmartAudio was set to
+        Multi-stream mode and headphones or external speakers were attached to
+        the computer. This fix is to follow Windows' behavior.
+        (Hints)
+        1. To disable sound from the internal speakers in lock state, press the
+           mute button on the keyboard.
+        2. A beep sound may be heard when entering standby/sleep state, resuming
+           normal operation from standby/sleep state, closing and opening the
+           lid. To disable the beep sound, do either of the following settings.
+           a) Open ThinkVantage Power Manager, select Switch to: [Advanced],
+              select the Global Power Settings tab and uncheck the Beep when
+              power state changes option.
+           b) 1. Turn off and on the computer.
+              2. While the "To interrupt normal startup, press the blue
+                 ThinkVantage button" message is displayed, press the F1 key.
+              3. Select Config, then select Beep and Alarm.
+              4. Set the Power Control Beep option to Disabled.
+              5. Press the F10 key to save configuration and exit.
+              6. Select Yes and restart the computer.
+- (Fix) Fixed an issue of Windows Memory Diagnostic failure with two memory modules.
+
+<1.37-1.24>
+ UEFI: 1.37 / ECP: 1.24
+- (Fix) Fixed an issue where the system might be discharged from the main
+        battery after installation of slice battery.
+
+<1.37-1.23>
+ UEFI: 1.37 / ECP: 1.23
+- (Fix) Fixed an issue where specific SATA devices might not be detected after
+        reboot.
+- (Fix) Fixed an issue where Fn icon might not appear normally by pressing
+        specific key.
+
+<1.36-1.22>
+ UEFI: 1.36 / ECP: 1.22
+- (New) Add support for a new LCD.
+
+<1.35-1.22>
+ UEFI: 1.35 / ECP: 1.22
+- [Important]
+        Added support for Microsoft Windows 8.
+- (New) Updated Intel ME firmware.
+
+<1.34-1.22>
+ UEFI: 1.34 / ECP: 1.22
+- (Fix) Fixed an issue where improper access to the slice battery might be done.
+
+<1.33-1.21>
+ UEFI: 1.33 / ECP: 1.21
+- (Fix) Fixed an issue where specific hard disks might not be detected after
+        resuming normal operation from standby/sleep state.
+- (Fix) Fixed an issue where an unnecessary fan error message might be shown.
+- (Fix) Fixed an issue where hang might happen at post with a certain USB HDD.
+
+<1.31-1.20>
+ UEFI: 1.31 / ECP: 1.20
+- (New) Support for a specific private WAN.
+
+<1.29-1.20>
+ UEFI: 1.29 / ECP: 1.20
+- (Fix) Fixed an issue where incorrect battery capacity might be shown in some
+        battery benchmark programs.
+- (Fix) Fixed an issue where the computer failed to resume normal operation from
+        hibernation state after running Setup Defaults by the F9 key in the
+        ThinkPad Setup menu.
+- (Fix) Fixed an issue where the Power-On NumLock function in ThinkPad Setup did
+        not work.
+
+<1.28-1.13>
+ UEFI: 1.28 / ECP: 1.13
+-  (Fix) Fixed an issue that Windows XP displays error message when system is undocked
+         from Ultrabase in SATA Compatibility mode.
+
+<1.26-1.13>
+ UEFI: 1.26 / ECP: 1.13
+- (New) Allow to enable WWAN and WLAN device simultaneously.
+- (Fix) Fixed an issue that might not resume from suspend state with combination of
+        specific CPU and BIOS setting for Intel Hyper-Threading Technology.
+- (Fix) Fixed an issue where the maximum number of failed password attempts for WMI
+        was not 3.
+- (Fix) Fixed an issue that error message is displayed when system is undocked from
+        slicer.
+
+<1.25-1.13>
+ UEFI: 1.25 / ECP: 1.13
+- (Fix) Fixed an issue where SATA BIOS might return timeout error with
+        SATA compatibility mode.
+- (Fix) Fixed an issue where updating BIOS might not be completed if it is
+        executed after resume.
+
+<1.24-1.13>
+ UEFI: 1.24 / ECP: 1.13
+- (Fix) Corrected a description of VERSION in this README document.
+
+<1.24-1.13>
+ UEFI: 1.24 / ECP: 1.13
+- (New) Improved memory resource allocation process to reserve more memory space
+        for optional hardware devices.
+- (Fix) Fixed an issue that intranet account login failure for ThinkVantage
+        Hardware Password Manager.
+- (Fix) Allowed system recovery from POST 191 error without loading setup defaults
+        in BIOS setup menu by press F9 key.
+
+<1.22-1.12>
+ UEFI: 1.22 / ECP: 1.12
+- (New) Add support for old type external fingerprint reader.
+- (New) Add support an option to change product name and version format in
+        SMBIOS.
+- (Fix) Fixed an issue where system boot might be slow with special condition.
+- (Fix) Fixed an issue where system might be halt when some mobile phone is
+        attached on USB port.
+- (Fix) Fixed an issue where system performance might be down in high stress
+        configuration.
+- (Fix) Fixed an issue where Flash Update utility fails when DEP (Data Execute
+        Prevention) is enabled.
+- (Fix) Fixed an issue that Hard Disk Password is unintentionally enabled for eSATA
+        HDD on dock.
+
+<1.21-1.11>
+ UEFI: 1.21 / ECP: 1.11
+- (Fix) According to the smartphone issue below, following smartphones are tested:
+        Motorola: Droid 2, Droid X
+        HTC: Nexus One, EVO, Droid Incredible, Droid Incredible 2, ThunderBolt, Aria
+        Samsung: Captivate, Galaxy Tab
+
+<1.21-1.11>
+ UEFI: 1.21 / ECP: 1.11
+- (New) Improved system performance when heavy program is executed with 65W AC adapter.
+- (New) Improved system boots time.
+- (New) Improved fan rotation speed control.
+- (New) Disabled keyboarding while the lid was closed to avoid unexpected key
+        input when the computer was held with the lid closed.
+- (Fix) Fixed an issue where 1820 error might be displayed when using external
+        fingerprint reader with disabled internal fingerprint reader.
+- (Fix) Fixed an issue where system might not boot when Smartphone was connected on
+        USB port.
+- (Fix) Fixed an issue where system might not boot from bootloader program.
+- (Fix) Improved cooling fan noise.
+- (Fix) Corrected spelling mistakes in BIOS setup menu.
+
+<1.19-1.09>
+ UEFI: 1.19 / ECP: 1.09
+- (New) Improvement for the issue that CPU is unexpectedly fixed to low frequency mode.
+- (New) Improved fan control method.
+
+<1.18-1.08>
+ UEFI: 1.18 / ECP: 1.08
+- (New) Added support for Password Beep function.
+- (New) Added support to increase number of configurable boot devices by BootOrder
+        option of Windows WMI script.
+- (New) Upgrade Intel Sandy Bridge Microcode Upgrade to revision 18
+- (Fix) Fixed an issue where Intel TXT Feature might not be enabled by ThinkPad BIOS
+        Settings for Windows when Security Chip is activate at same time.
+- (Fix) Fixed an issue where Bluetooth device power state might be changed after
+        running Windows WMI script.
+- (Fix) Fixed an issue where BitLocker can not be enabled on UEFI boot 64bit Windows.
+- (Fix) Fixed an issue where PXE boot might not be completed successfully.
+- (Fix) Fixed an issue where password authentication might be failed by using
+        fingerprint depending on the password string.
+
+<1.17-1.08>
+ UEFI: 1.17 / ECP: 1.08
+- (New) Added support for resetting the Cryptographic Key for Full Disk
+        Encrypution(FDE) Hard drives and erasing of the Solid State Drive
+        (SSD).
+        (To use this feature, you need to obtain "ThinkPad Drive Erase Utility
+        for the Resetting the Cryptographic Key and the Erasing the Solid State
+        Drive" package)
+- (Fix) Fixed an issue where a system stayed unexpected CPU throttling mode.
+
+<1.16-1.07>
+ UEFI: 1.16 / ECP: 1.07
+- (New) Support for new Embedded Controller.
+- (Fix) Fixed an issue where expected serial number might not be stored in
+        serial number field of SMBIOS type 3 structure depending on system
+        setting.
+- (Fix) Fixed an issue where Windows screen saver might not be run.
+- (Fix) Fixed an issue where some system settings aren't configured by WMI.
+- (Fix) Changed thermal setting to reduce annoying fan noise.
+
+<1.15-1.06>
+ UEFI: 1.15 / ECP: 1.06
+- (New) Update Computrace module to version 80.895.
+- (Fix) Fixed issues where to change some security related settings by WMI script.
+- (Fix) Fixed an issue where Linux installed HDD may not boot when the partition
+        is not set active.
+- (Fix) Fixed an issue where system with large memory might fail to resume normal
+        operation from standby state.
+- (Fix) Fixed an issue where AC adaptor might be not detected.
+
+<1.12-1.05>
+ UEFI: 1.12 / ECP: 1.05
+- (New) Added support for the Intel Pentium CPU model.
+- (Fix) Fixed an issue where the touchpad did not function after the system
+        resumed from standby mode.
+- (Fix) Fixed an issue where battery and standby LEDs turned on after the system
+        shut down when the fingerprint data was registered.
+
+<1.11-1.03>
+ UEFI: 1.11 / ECP: 1.03
+- (New) Added support for mSATA model.
+- (New) Added support to configure boot priority order using a WMI interface.
+- (Fix) Fix for CD boot failure depending on a content of a bootable CD.
+
+<1.06>
+ UEFI: 1.06 / ECP: 1.03
+- (New) Support for ThinkPad X220 Tablet, X220i Tablet
+
+<1.04>
+ UEFI: 1.04 / ECP: 1.03
+- (New) Initial release for ThinkPad X220. X220i
+
+
+--------------------------------------------------------------------------------
+UEFI BIOS INFORMATION
+
+Memory Map Information
+----------------------
+
+Reserved Area:
+The following conventional memory addresses are reserved by the UEFI BIOS and
+others.
+
+  C0000-CFFFF : Reserved for Video BIOS
+  D0000-D0FFF : Reserved for Option ROM of Ethernet (*a)
+  E0000-FFFFF : Reserved for System BIOS
+
+ Notes:
+   *a: This area will be released in case of Ethernet LAN Option ROM was NOT used
+       at system boot.
+
+Usable Area:
+The following memory address can be used by the memory manager such as EMM386.
+
+  D0000-DFFFF or D1000-DFFFF (*b)
+
+  Note:
+   *b: Memory address will be changed to D1000-DFFFF when Ethernet LAN Option
+       ROM was used at system boot.
+
+       Certain addresses in this area will be reserved for optional devices
+       by Operating Systems. The addresses vary and depend on the
+       design of each Operating System.
+
+
+--------------------------------------------------------------------------------
+TRADEMARKS
+
+* Lenovo, ThinkPad and ThinkVantage are registered trademarks of Lenovo.
+* UltraBase and Ultrabay are trademarks of Lenovo.
+* Rescue and Recovery is a trademark of Lenovo.
+
+* Intel is a registered trademark of Intel Corporation.
+* Microsoft, Windows and Windows Vista are registered trademarks of Microsoft
+  Corporation.
+* ExpressCard is a trademark of PCMCIA (Personal Computer Memory
+  Card International Association).
+
+Other company, product, and service names may be registered trademarks,
+trademarks or service marks of others.
